@@ -20,8 +20,8 @@ while True:
     choice = input("Enter choice(1/2/3/4): ")
 
     if choice in ('1', '2', '3', '4'):
-        num1 = int(input("Enter first number: "))
-        num2 = int(input("Enter second number: "))
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
 
         if choice == '1':
             print(num1, "+", num2, "=", add(num1, num2))
@@ -35,3 +35,5 @@ while True:
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
         break
+    else:
+        print("Invalid input please enter a number 1-4")
